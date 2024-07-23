@@ -1,0 +1,10 @@
+# This is an example config file. It tells Infracost where the
+# Terraform projects live and any var files they need:
+# `infracost breakdown --config-file infracost-projects.yml
+# See docs: https://infracost.io/config-file
+version: 0.1
+
+# Details of the repo's Terraform projects, their results will be merged into the same breakdown or diff output
+projects:
+  - path: examples/terraform
+    usage_file: infracost-usage-example.yml # Define resource usage estimates, see https://infracost.io/usage-file
